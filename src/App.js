@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Game from "./components/Game/Game";
+import homeLogo from "./pancakes.png";
+import awayLogo from "./waffles.png";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Game
+        venue="Breakfast Stadium"
+        homeTeam="Pancakes"
+        homeLogo={homeLogo}
+        awayTeam="Waffles"
+        awayLogo={awayLogo}
+      />
     </div>
   );
 }
